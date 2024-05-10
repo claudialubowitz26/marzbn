@@ -103,7 +103,7 @@ SQLALCHEMY_DATABASE_URL = "sqlite:////var/lib/marzban/db.sqlite3"
 EOF
 mkdir -p /var/lib/marzban/xray-core
 wget https://github.com/XTLS/Xray-core/releases/download/v1.8.11/Xray-linux-64.zip -P /var/lib/marzban/xray-core
-apt install wget unzip
+apt install wget unzip -y
 unzip Xray-linux-64.zip
 rm Xray-linux-64.zip
 
