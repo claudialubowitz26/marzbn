@@ -1,5 +1,6 @@
 #!/bin/bash
 
+clear
 #domain
 read -rp "Masukkan Domain: " domain
 echo "$domain" > /root/domain
