@@ -152,7 +152,6 @@ sudo apt-get install speedtest -y
 apt install nginx -y
 rm /etc/nginx/conf.d/default.conf
 
-domain=hase.lumine.mu.id
 cat > "/etc/nginx/nginx.conf" << EOF
 #user nobody nogroup;
 worker_processes auto;
