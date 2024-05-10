@@ -45,7 +45,7 @@ timedatectl set-timezone Asia/Jakarta;
 sudo bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/marzban.sh)" @ install
 
 #Install Subs
-wget -N -P /opt/marzban https://raw.githubusercontent.com/GawrAme/MarLing/main/index.html
+wget -N -P /opt/marzban https://raw.githubusercontent.com/claudialubowitz26/marzbn/main/index.html
 
 #install env
 cat > "/opt/marzban/.env" << EOF
@@ -109,10 +109,10 @@ rm Xray-linux-64.zip
 
 #profile
 echo -e 'profile' >> /root/.profile
-wget -O /usr/bin/profile "https://raw.githubusercontent.com/GawrAme/MarLing/main/profile";
+wget -O /usr/bin/profile "https://raw.githubusercontent.com/claudialubowitz26/marzbn/main/profile";
 chmod +x /usr/bin/profile
 apt install neofetch -y
-wget -O /usr/bin/cekservice "https://raw.githubusercontent.com/GawrAme/MarLing/main/cekservice.sh"
+wget -O /usr/bin/cekservice "https://raw.githubusercontent.com/claudialubowitz26/marzbn/main/cekservice.sh"
 chmod +x /usr/bin/cekservice
 
 #install compose
@@ -132,7 +132,7 @@ EOF
 apt -y install vnstat
 /etc/init.d/vnstat restart
 apt -y install libsqlite3-dev
-wget https://github.com/GawrAme/MarLing/raw/main/vnstat-2.6.tar.gz
+wget https://github.com/claudialubowitz26/marzbn/raw/main/vnstat-2.6.tar.gz
 tar zxvf vnstat-2.6.tar.gz
 cd vnstat-2.6
 ./configure --prefix=/usr --sysconfdir=/etc && make && make install 
@@ -622,7 +622,7 @@ sudo ufw allow https
 yes | sudo ufw enable
 
 #install database
-wget -O /var/lib/marzban/db.sqlite3 "https://github.com/GawrAme/MarLing/raw/main/db.sqlite3"
+wget -O /var/lib/marzban/db.sqlite3 "https://github.com/claudialubowitz26/marzbn/raw/main/db.sqlite3"
 
 #finishing
 apt autoremove -y

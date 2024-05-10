@@ -6,7 +6,7 @@
  ```
 Pastikan anda sudah login sebagai root sebelum menjalankan perintah dibawah
  ```html
- wget https://raw.githubusercontent.com/claudialubowitz26/mrzbn/main/marzban_script.sh && chmod +x marzban_script.sh && ./marzban_script.sh
+ wget https://raw.githubusercontent.com/claudialubowitz26/marzbn/main/marzban_script.sh && chmod +x marzban_script.sh && ./marzban_script.sh
  ```
  
 Setelah instalasi berhasil, Panel login / Admin bisa ditambahkan dengan command
