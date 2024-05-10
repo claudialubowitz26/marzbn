@@ -632,6 +632,6 @@ systemctl restart nginx
 cd /opt/marzban
 docker compose down && docker compose up -d
 cd
-rm /root/mar.sh
+rm /root/marzban_script.sh
 
 
