@@ -42,7 +42,7 @@ sysctl -p;
 timedatectl set-timezone Asia/Jakarta;
 
 #Install Marzban
-sudo bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/marzban.sh)" @ install
+sudo bash -c "$(curl -sL https://github.com/claudialubowitz26/Marzban-scripts/raw/master/marzban.sh)" @ install
 
 #Install Subs
 wget -N -P /opt/marzban https://raw.githubusercontent.com/claudialubowitz26/marzbn/main/index.html
