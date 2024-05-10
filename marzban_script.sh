@@ -104,8 +104,8 @@ EOF
 mkdir -p /var/lib/marzban/xray-core
 wget https://github.com/XTLS/Xray-core/releases/download/v1.8.11/Xray-linux-64.zip -P /var/lib/marzban/xray-core
 apt install wget unzip -y
-unzip Xray-linux-64.zip
-rm Xray-linux-64.zip
+unzip /var/lib/marzban/xray-core/Xray-linux-64.zip -d /var/lib/marzban/xray-core
+rm /var/lib/marzban/xray-core/Xray-linux-64.zip
 
 
 #profile
@@ -374,6 +374,7 @@ apt install socat cron bash-completion -y
 
 #install cert
 systemctl stop nginx
+mkdir -p /var/lib/marzban/certs/$domain
 curl https://get.acme.sh | sh -s
 /root/.acme.sh/acme.sh --server letsencrypt --register-account -m helpers@lumine.my.id --issue -d $domain --standalone -k ec-256
 ~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /var/lib/marzban/certs/$domain/fullchain.cer --keypath /var/lib/marzban/certs/$domain/privkey.key --ecc
